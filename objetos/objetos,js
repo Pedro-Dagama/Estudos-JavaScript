@@ -1,0 +1,47 @@
+/---------/;
+
+const caneta = {
+  nome: "caneta",
+  preco: parseFloat(2.0),
+  quantidade: 5,
+};
+
+console.log(
+  `caneta custa R$ ${caneta.preco} e possui em ${caneta.quantidade} estoque`
+);
+
+/---------/;
+
+let pessoa = {
+  nome: "pedro",
+  idade: 25,
+  CNH: true,
+};
+console.log(pessoa);
+
+const carro = {
+  modelo: "Uno",
+  ano: 2023,
+  km: 2000,
+  combustivel: "gasolina",
+  litrosConsumidos: 654,
+};
+
+console.log(
+  `O carro ${carro.modelo} ano ${carro.ano} fez em  média ${(carro.km / carro.litrosConsumidos).toFixed(2)} KM/L de ${carro.combustivel}`
+);
+
+/---------/;
+
+const endereco ={
+  rua:'rua das tulias',
+  numero: 10
+}
+
+const pessoa1={
+  nome: 'João',
+  sobrenome: 'Fagundes',
+  endereco
+}
+
+console.log( `${pessoa1.nome} mora em ${pessoa1.endereco.rua}`);
