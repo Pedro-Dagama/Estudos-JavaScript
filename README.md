@@ -24,13 +24,3 @@
 ✔️ DOM e Manipulação de Eventos  
 ✔️ Promises e Async/Await  
 ⏳ Projetos práticos em andamento...  
-
----
-
-## 📂 Estrutura do Repositório  
-```bash
-Estudos-JavaScript/
-│── fundamentos/        # Conceitos básicos
-│── exercicios/         # Exercícios resolvidos
-│── projetos/           # Pequenos projetos práticos
-│── anotacoes.md        # Resumos e anotações teóricas
