@@ -1,47 +1,78 @@
 /---------/;
 
+// Criação de um objeto "caneta"
 const caneta = {
-  nome: "caneta",
-  preco: parseFloat(2.0),
-  quantidade: 5,
+  nome: "caneta",                // Propriedade "nome" com valor string
+  preco: parseFloat(2.0),        // Propriedade "preco", convertida para número de ponto flutuante
+  quantidade: 5,                 // Propriedade "quantidade" que indica estoque
 };
 
+// Exibe no console as informações da caneta usando template string
 console.log(
   `caneta custa R$ ${caneta.preco} e possui em ${caneta.quantidade} estoque`
 );
 
 /---------/;
 
+// Criação de um objeto "pessoa"
 let pessoa = {
-  nome: "pedro",
-  idade: 25,
-  CNH: true,
+  nome: "pedro",   // Nome da pessoa
+  idade: 25,       // Idade
+  CNH: true,       // Se possui CNH (true = sim, false = não)
 };
-console.log(pessoa);
+console.log(pessoa); // Mostra o objeto completo no console
 
+// Criação de um objeto "carro"
 const carro = {
-  modelo: "Uno",
-  ano: 2023,
-  km: 2000,
-  combustivel: "gasolina",
-  litrosConsumidos: 654,
+  modelo: "Uno",             // Modelo do carro
+  ano: 2023,                 // Ano de fabricação
+  km: 2000,                  // Quilometragem rodada
+  combustivel: "gasolina",   // Tipo de combustível
+  litrosConsumidos: 654,     // Litros consumidos até agora
 };
 
+// Calcula a média de consumo (km por litro) e exibe
 console.log(
   `O carro ${carro.modelo} ano ${carro.ano} fez em  média ${(carro.km / carro.litrosConsumidos).toFixed(2)} KM/L de ${carro.combustivel}`
 );
 
 /---------/;
 
-const endereco ={
-  rua:'rua das tulias',
-  numero: 10
+// Objeto endereço
+const endereco = {
+  rua: 'rua das tulias',  // Nome da rua
+  numero: 10              // Número da residência
 }
 
-const pessoa1={
-  nome: 'João',
-  sobrenome: 'Fagundes',
-  endereco
+// Objeto pessoa1 que inclui outro objeto (endereco) dentro dele
+const pessoa1 = {
+  nome: 'João',          // Nome
+  sobrenome: 'Fagundes', // Sobrenome
+  endereco               // Endereço (objeto definido acima)
 }
 
-console.log( `${pessoa1.nome} mora em ${pessoa1.endereco.rua}`);
+// Exemplo de acesso direto às propriedades do objeto aninhado (está comentado)
+// console.log( `${pessoa1.nome} mora em ${pessoa1.endereco.rua}`);
+
+// Percorre todas as propriedades de pessoa1
+for (let prop in pessoa1) {
+  console.log(pessoa1[prop]); // Mostra o valor de cada propriedade
+}
+
+ /---------/;
+
+// Criação de variáveis individuais
+let nomeUsuario = 'jorge';  
+let emailUsuario = "jorge-fagundes@hotmail.com";
+
+// Criação de objeto "userPeople" usando as variáveis acima
+const userPeople = {
+  nome: nomeUsuario,    // Nome do usuário
+  email: emailUsuario   // Email do usuário
+}
+
+// Percorre as propriedades do objeto userPeople
+for (let props in userPeople) {
+  // Exibe chave (props) + valor em maiúsculas
+  console.log(` ${props}: ${(userPeople[props]).toUpperCase()}`);
+}
